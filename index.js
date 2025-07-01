@@ -6,6 +6,14 @@ let temp = document.getElementById("temperature");
 let tempIcon = document.getElementById("icon");
 let hourlyTim = document.getElementById("hourlyTime");
 let hourlyTemp = document.getElementById("hourlyTemp");
+
+placeLocation.addEventListener("keydown", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    btn.click();
+  }
+});
+
 btn.addEventListener("click", async () => {
   try {
     // Fetch current weather
