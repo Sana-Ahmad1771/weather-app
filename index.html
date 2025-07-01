@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/e8ea56d0ff.js" crossorigin="anonymous"></script>
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <section>
+        <nav>
+            <div class="weather-logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0.333333 13.646C0.333333 13.646 3.69873 11.5248 7 13.2231C10.6888 15.1208 13.6667 13.5693 13.6667 13.5693V1.83711C13.6667 1.83711 10.6893 3.3859 7.00103 1.48971C3.69903 -0.207909 0.333333 1.92365 0.333333 1.92365V13.646Z"
+                        fill="white" />
+                </svg>
+                <h1>WeatherWise</h1>
+            </div>
+        </nav>
+    </section>
+    <section class="all-main-page">
+        <!-- hero -->
+        <section class="hero">
+            <div class="hero-content">
+                <div>
+                    <h1>Your Local Weather</h1>
+                    <p>Get real-time weather updates and forecasts for your area. Stay informed with accurate and
+                        up-to-date
+                        information.</p>
+                </div>
+                <div class="search-content">
+                    <div> <i class="fas fa-magnifying-glass" style="color: #92b2c7;"></i>
+                        <input type="search" id="searchcontent" placeholder="Enter your location">
+                    </div>
+                    <div> <button id="search-content">Search</button></div>
+                </div>
+            </div>
+        </section>
+        <!-- today weather -->
+        <section class="today-weather">
+            <h1>Today's Weather</h1>
+        </section>
+        <section>
+            <div class="today-weather-info">
+                <div class="today-weather-image"><img src="./todays-weather.png" alt=""></div>
+                <div class="today-weather-content">
+                    <h3>Weather in <span id="city">Metropolis</span></h3>
+                    <p id="condition">Partly Cloudy, 22°C</p>
+                    <img src=" " alt="" id="icon">
+                </div>
+            </div>
+        </section>
+        <!--  -->
+        <section class="hourly-forecast">
+            <h1>Hourly Forecast</h1>
+        </section>
+        <!--  -->
+
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swipper-wrapper hourly-forecast-info">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="hourly-forecast-image"><img src="./Depth 7, Frame 0.png" alt=""></div>
+                        <div class="hourly-forecast-content">
+                            <h3>1 PM</h3>
+                            <p>24°C</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <div class="hourly-forecast-image"><img src="./Depth 7, Frame 0 (1).png" alt=""></div>
+                            <div class="hourly-forecast-content">
+                                <h3>2 PM</h3>
+                                <p>23°C</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <div class="hourly-forecast-image"><img src="./Depth 7, Frame 0 (2).png" alt=""></div>
+                            <div class="hourly-forecast-content">
+                                <h3>3 PM</h3>
+                                <p>22°C</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <div class="hourly-forecast-image"><img src="./Depth 7, Frame 0 (3).png" alt=""></div>
+                            <div class="hourly-forecast-content">
+
+                                <h3>4 PM</h3>
+                                <p>25°C</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <div class="hourly-forecast-image"><img src="./Depth 7, Frame 0 (4).png" alt=""></div>
+                            <div class="hourly-forecast-content">
+                                <h3>5 PM</h3>
+                                <p>24°C</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <div class="hourly-forecast-image"><img src="./Depth 7, Frame 0 (5).png" alt=""></div>
+                            <div class="hourly-forecast-content">
+                                <h3>1 PM</h3>
+                                <p>23°C</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <div class="hourly-forecast-image"><img src="./Depth 7, Frame 0.png" alt=""></div>
+
+                            <div class="hourly-forecast-content">
+                                <h3>1 PM</h3>
+                                <p>24°C</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <div class="hourly-forecast-image"><img src="./Depth 7, Frame 0 (1).png" alt=""></div>
+                            <div class="hourly-forecast-content">
+                                <h3>2 PM</h3>
+                                <p>23°C</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <div class="hourly-forecast-image"><img src="./Depth 7, Frame 0 (2).png" alt=""></div>
+                            <div class="hourly-forecast-content">
+                                <h3>3 PM</h3>
+                                <p>22°C</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <div class="hourly-forecast-image"><img src="./Depth 7, Frame 0 (3).png" alt=""></div>
+                            <div class="hourly-forecast-content">
+
+                                <h3>4 PM</h3>
+                                <p>25°C</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="hourly-forecast-image"><img src="./Depth 7, Frame 0 (4).png" alt=""></div>
+                        <div class="hourly-forecast-content">
+                            <h3>5 PM</h3>
+                            <p>24°C</p>
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <div class="hourly-forecast-image"><img src="./Depth 7, Frame 0 (5).png" alt=""></div>
+                            <div class="hourly-forecast-content">
+                                <h3>1 PM</h3>
+                                <p>23°C</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+
+                        <div class="hourly-forecast-image"><img src="./Depth 7, Frame 0.png" alt=""></div>
+
+                        <div class="hourly-forecast-content">
+                            <h3>1 PM</h3>
+                            <p>24°C</p>
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <div class="hourly-forecast-image"><img src="./Depth 7, Frame 0 (1).png" alt=""></div>
+                            <div class="hourly-forecast-content">
+                                <h3>2 PM</h3>
+                                <p>23°C</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <div class="hourly-forecast-image"><img src="./Depth 7, Frame 0 (2).png" alt=""></div>
+                            <div class="hourly-forecast-content">
+                                <h3>3 PM</h3>
+                                <p>22°C</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <div class="hourly-forecast-image"><img src="./Depth 7, Frame 0 (3).png" alt=""></div>
+                            <div class="hourly-forecast-content">
+
+                                <h3>4 PM</h3>
+                                <p>25°C</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <div class="hourly-forecast-image"><img src="./Depth 7, Frame 0 (4).png" alt=""></div>
+                            <div class="hourly-forecast-content">
+                                <h3>5 PM</h3>
+                                <p>24°C</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <div class="hourly-forecast-image"><img src="./Depth 7, Frame 0 (5).png" alt=""></div>
+                            <div class="hourly-forecast-content">
+                                <h3>1 PM</h3>
+                                <p>23°C</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <div class="hourly-forecast-image"><img src="./Depth 7, Frame 0.png" alt=""></div>
+
+                            <div class="hourly-forecast-content">
+                                <h3>1 PM</h3>
+                                <p>24°C</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <div class="hourly-forecast-image"><img src="./Depth 7, Frame 0 (1).png" alt=""></div>
+                            <div class="hourly-forecast-content">
+                                <h3>2 PM</h3>
+                                <p>23°C</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <div class="hourly-forecast-image"><img src="./Depth 7, Frame 0 (2).png" alt=""></div>
+                            <div class="hourly-forecast-content">
+                                <h3>3 PM</h3>
+                                <p>22°C</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <div class="hourly-forecast-image"><img src="./Depth 7, Frame 0 (3).png" alt=""></div>
+                            <div class="hourly-forecast-content">
+
+                                <h3>4 PM</h3>
+                                <p>25°C</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="hourly-forecast-image"><img src="./Depth 7, Frame 0 (4).png" alt=""></div>
+                        <div class="hourly-forecast-content">
+                            <h3>5 PM</h3>
+                            <p>24°C</p>
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <div class="hourly-forecast-image"><img src="./Depth 7, Frame 0 (5).png" alt=""></div>
+                            <div class="hourly-forecast-content">
+                                <h3>1 PM</h3>
+                                <p>23°C</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+
+        <section class="Day-Forecast">
+            <h1>7-Day Forecast</h1>
+        </section>
+        <section class="forecast-container">
+            <div class="forecast-table">
+                <!-- Table Header -->
+                <div class="forecast-row header">
+                    <div>Day</div>
+                    <div>Condition</div>
+                    <div>High</div>
+                    <div>Low</div>
+                </div>
+                <!-- Forecast Data Rows -->
+                <div class="forecast-row">
+                    <div>Monday</div>
+                    <div>
+                        <p>Sunny</p>
+                    </div>
+                    <div>
+                        <p>28°C</p>
+                    </div>
+                    <div>
+                        <p>18°C</p>
+                    </div>
+                </div>
+
+                <div class="forecast-row">
+                    <div>Tuesday</div>
+                    <div>
+                        <p>Sunny</p>
+                    </div>
+                    <div>
+                        <p>27°C</p>
+                    </div>
+                    <div>
+                        <p>20°C</p>
+                    </div>
+                </div>
+                <div class="forecast-row">
+                    <div>wednesday</div>
+                    <div>
+                        <p>Sunny</p>
+                    </div>
+                    <div>
+                        <p>26°C</p>
+                    </div>
+                    <div>
+                        <p>21°C</p>
+                    </div>
+                </div>
+                <div class="forecast-row">
+                    <div>Thurday</div>
+                    <div>
+                        <p>Partly Cloudy</p>
+                    </div>
+                    <div>
+                        <p>27°C</p>
+                    </div>
+                    <div>
+                        <p>19°C</p>
+                    </div>
+                </div>
+                <div class="forecast-row">
+                    <div>Friday</div>
+                    <div>
+                        <p>Sunny</p>
+                    </div>
+                    <div>
+                        <p>26°C</p>
+                    </div>
+                    <div>
+                        <p>21°C</p>
+                    </div>
+                </div>
+                <div class="forecast-row">
+                    <div>Saturday</div>
+                    <div>
+                        <p>Sunny</p>
+                    </div>
+                    <div>
+                        <p>28°C</p>
+                    </div>
+                    <div>
+                        <p>20°C</p>
+                    </div>
+                </div>
+                <div class="forecast-row">
+                    <div>Sunday</div>
+                    <div>
+                        <p>Sunny</p>
+                    </div>
+                    <div>
+                        <p>30°C</p>
+                    </div>
+                    <div>
+                        <p>23°C</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </section>
+    <script src="./index.js"></script>
+</body>
+
+</html>
