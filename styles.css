@@ -149,10 +149,12 @@ body {
   font-size: 14px;
   color: #94b2c7;
 }
-/* .swiper-wrapper {
-  padding-bottom: 30px ;
- } */
-/*  */
+.swiper{
+  padding: 50px 0px !important;
+}
+.swiper-pagination{
+  bottom: 5px !important;
+}
 
 .forecast-container {
   padding: 12px 16px;
