@@ -101,10 +101,13 @@ const swiper = new Swiper(".swiper", {
     el: ".swiper-pagination",
     clickable: true,
   },
+   autoplay: {
+   delay: 5000,
+ },
   breakpoints: {
     // when window width is >= 320px
     320: {
-      slidesPerView: 2,
+      slidesPerView: 1.7,
       spaceBetween: 20,
     },
     // when window width is >= 480px
@@ -113,7 +116,7 @@ const swiper = new Swiper(".swiper", {
       spaceBetween: 30,
     },
     // when window width is >= 640px
-    640: {
+    900: {
       slidesPerView: 5.5,
       spaceBetween: 40,
     },

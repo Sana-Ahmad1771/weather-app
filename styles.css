@@ -37,7 +37,9 @@ body {
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 300px);
+  min-height: 600px;
+  max-height: 950px;
   font-family: "Space Grotesk";
   color: #fff;
 }
@@ -69,7 +71,7 @@ body {
   padding-left: 15px;
   align-items: center;
   flex: 1 0 0;
-  width: 480px;
+  max-width: 480px;
   height: 64px;
   border-radius: 12px 12px 12px 12px;
   border-top: 1px solid #335266;
@@ -77,9 +79,13 @@ body {
   border-left: 1px solid #335266;
   background: #1a2933;
 }
+.search-content div {
+  display: flex;
+  align-items: center;
+}
 .search-content input {
   color: #94b2c7;
-  background-color: transparent;
+  background-color: transparent !important;
   border: none;
   font-feature-settings: "dlig" on;
   font-family: "Space Grotesk";
@@ -88,12 +94,15 @@ body {
   padding: 8px;
 }
 .search-content button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
   color: #121c21;
   text-align: center;
   font-size: 16px;
   font-weight: 700;
-  padding: 12px 20px;
+  padding: 12px 20px !important;
   border-radius: 24px;
   border: none;
   cursor: pointer;
@@ -134,9 +143,6 @@ body {
 /*  */
 .hourly-forecast-info {
   display: flex;
-  /* flex-wrap: wrap; */
-  gap: 12px;
-  /* justify-content: space-between; */
   padding: 16px;
   color: #fff;
   font-feature-settings: "dlig" on;
@@ -149,10 +155,11 @@ body {
   font-size: 14px;
   color: #94b2c7;
 }
-.swiper{
+.swiper {
+  text-align: center;
   padding: 50px 0px !important;
 }
-.swiper-pagination{
+.swiper-pagination {
   bottom: 5px !important;
 }
 
@@ -190,4 +197,54 @@ body {
 
 .forecast-row:last-child {
   border-bottom: none;
+}
+
+@media (max-width: 1024px) {
+  .all-main-page {
+    padding: 20px 40px;
+  }
+  .search-content {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .search-content button {
+    width: 100%;
+  }
+
+  .swiper {
+    text-align: center;
+  }
+  .today-weather-image img {
+    width: 100% !important;
+    height: auto !important;
+    display: block;
+    margin: 0 auto;
+  }
+  .all-main-page {
+    padding: 10px 10px;
+  }
+  .hero-content {
+    padding: 120px 10px 0px 10px;
+    gap: 20px;
+  }
+  .search-content {
+    width: 100%;
+    min-width: 0;
+    height: 48px;
+    font-size: 14px;
+  }
+  .today-weather-info {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .today-weather-content {
+    text-align: center;
+  }
+  .swiper {
+    text-align: center;
+  }
+  .forecast-table {
+    font-size: 14px;
+  }
 }
